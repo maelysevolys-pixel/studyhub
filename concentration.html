@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Concentration | StudyHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudyHub</h1>
+        <p>Organise ton travail, un devoir à la fois.</p>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="devoirs.html">Mes devoirs</a>
+            <a href="calendrier.html">Calendrier</a>
+            <a href="concentration.html">Concentration</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Mon espace de concentration</h2>
+            <p>
+                Choisis tes durées, installe-toi confortablement
+                et concentre-toi sur une tâche à la fois.
+            </p>
+        </section>
+
+        <section id="section-concentration">
+
+            <h2>Mon minuteur</h2>
+
+            <!-- Choix du mode de fonctionnement -->
+            <div class="choix-mode">
+                <button id="mode-travail" type="button">
+                    Travail
+                </button>
+
+                <button id="mode-pause" type="button">
+                    Pause
+                </button>
+            </div>
+
+            <!-- Temps restant -->
+            <div id="minuteur" role="timer"
+                aria-label="Temps restant">
+                25:00
+            </div>
+
+            <p id="etat-minuteur" aria-live="polite">
+                Prêt à commencer ?
+            </p> 
+			<p id="progression-sessions">Session 1 sur 4</p>
+
+
+            <!-- Commandes du minuteur -->
+            <div class="commandes-minuteur">
+                <button id="demarrer-minuteur" type="button">
+                    Démarrer
+                </button>
+
+                <button id="pause-minuteur" type="button">
+                    Pause
+                </button>
+
+                <button id="reinitialiser-minuteur" type="button">
+                    Réinitialiser
+                </button>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Personnaliser mes durées</h2>
+
+            <p>
+                Les durées sont exprimées en minutes.
+                Tu peux les modifier avant ou pendant une session.
+            </p>
+
+            <form id="formulaire-durees">
+
+                <label for="duree-travail">
+                    Durée du travail (1 à 180 minutes)
+                </label>
+
+                <input
+                    type="number"
+                    id="duree-travail"
+                    min="1"
+                    max="180"
+                    value="25"
+                    required
+                >
+
+                <label for="duree-pause">
+                    Durée de la pause (1 à 60 minutes)
+                </label>
+
+                <input
+                    type="number"
+                    id="duree-pause"
+                    min="1"
+                    max="60"
+                    value="5"
+                    required
+                >
+				
+				<!-- Nombre de sessions de travail souhaitées -->
+				<label for="nombre-sessions">
+					Nombre de sessions de travail :
+				</label>
+				<input
+					type="number"
+					id="nombre-sessions"
+					min="1"
+					max="20"
+					value="4"
+					required
+				>
+
+                <button type="submit">
+                    Appliquer les durées
+                </button>
+
+            </form>
+
+            <p id="message-durees" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>Petit conseil</h2>
+            <p>
+                Pendant une session de travail, essaie de limiter
+                les distractions. Pendant ta pause, éloigne-toi
+                un instant de ton écran si tu en as envie.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudyHub — Ton espace de travail personnel</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+

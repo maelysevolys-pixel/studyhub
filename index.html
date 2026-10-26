@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ajuste les dimensions et le niveau de zoom du site Web pour qu’ils s’adaptent à l’écran--> 
+    <title>StudyHub - Mon espace scolaire</title>
+    <link rel="stylesheet" href="style.css"> <!--link relie le HTML au fichier CSS.-->
+</head>
+
+<body>
+    <header> <!--header contient l'en-tête de la page.-->
+        <h1>StudyHub</h1>
+        <p>Mon espace de travail scolaire</p>
+
+        <!-- Liens vers les sections de la page -->
+        <nav> 
+				<!--La balise <nav> en HTML est un élément utilisé pour définir un bloc majeur 
+				de liens de navigation sur une page web. Il indique au navigateur et aux technologies d’assistance 
+				(comme les lecteurs d’écran(logiciel d'assistance qui retranscrit ce qui est affiché à l'écran par une synthèse vocale ou sur un afficheur braille)) 
+				que le contenu ci-joint est destiné à la navigation 
+				dans la page actuelle ou vers d’autres pages du site Web. -->
+			<a href="index.html">Accueil</a>
+			<a href="devoirs.html">Mes devoirs</a>
+			<a href="calendrier.html">Calendrier</a>
+			<a href="concentration.html">Concentration</a>
+        </nav>
+    </header>
+
+    <main> <!--main regroupe le contenu principal.-->
+        <section id="accueil"> <!--id permet d'identifier une zone précise, notamment pour la manipuler en JavaScript.-->
+            <h2>Organise tes journées.</h2>
+            <p>
+                Planifie tes devoirs, suis tes progrès
+                et avance à ton rythme.
+            </p>
+				
+			<!-- Bouton qui déclenche un événement JavaScript -->
+			<button id="bouton-bienvenue" type="button">
+				Me motiver !
+			</button>
+			
+			<!-- Le message apparaîtra ici -->
+			<p id="message-bienvenue"></p>
+            
+			<!-- Image : tu peux remplacer le fichier -->
+            <img src="illustration.jfif"
+                 alt="Illustration d'un espace de travail scolaire">
+        </section> <!--section sépare les grandes parties du site-->
+		
+	<section id="ressources">
+		<h2>Mes ressources utiles</h2>
+
+		<p>
+			Pour voir tes devoirs et les ajouter plus 
+			rapidement, consulte ton Pronote :
+		</p>
+
+			<a href="https://9830557n.index-education.net/pronote/"
+			target="_blank" 
+			rel="noopener noreferrer">
+			Accès Pronote
+			</a>
+		<p>
+			Améliore ton orthographe et ton expression 
+			grâce au projet Voltaire :
+		</p>
+
+			<a href="https://www.projet-voltaire.fr/"
+			target="_blank" 
+			rel="noopener noreferrer">
+			Projet Voltaire
+			</a>
+		<p>
+			Pour créer des designs incroyables, Figma est ton allié : 
+		</p>
+
+			<a href="https://www.figma.com/fr-fr/"
+			target="_blank" 
+			rel="noopener noreferrer">
+			Figma
+			</a>
+		<p>
+			Pour ton BAC de Maths ou juste pour ta spé ? 
+			Révise avec MathAléa : 
+		</p>
+
+			<a href="https://mathalea.fr/alea/"
+			target="_blank" 
+			rel="noopener noreferrer">
+			MathAléa
+			</a>
+		<p>
+			Besoin de consulter tes emails ? : 
+		</p>
+
+			<a href="https://mail.google.com"
+			target="_blank" 
+			rel="noopener noreferrer">
+			Gmail
+			</a>
+	</section>
+			<!--href indique l'adresse de destination.
+			target="_blank" ouvre le lien dans un nouvel onglet.
+			rel="noopener noreferrer" renforce la sécurité du nouvel onglet.-->
+
+    <footer>
+        <p>StudyHub - Un pas à la fois.</p>
+    </footer>
+
+    <script src="script.js"></script> <!--script relie le HTML au fichier JavaScript.-->
+</body>
+</html>
+

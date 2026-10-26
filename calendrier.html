@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendrier | StudyHub</title>
+
+    <!-- On réutilise le CSS commun du site -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudyHub</h1>
+        <p>Organise ton travail, un devoir à la fois.</p>
+
+        <!-- Navigation entre les pages -->
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="devoirs.html">Mes devoirs</a>
+            <a href="calendrier.html">Calendrier</a>
+            <a href="concentration.html">Concentration</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Mon calendrier</h2>
+            <p>
+                Retrouve ici les dates limites de tes devoirs
+                enregistrés dans StudyHub.
+            </p>
+        </section>
+
+        <section id="section-calendrier">
+
+            <!-- Les boutons permettent de changer de mois -->
+            <div class="calendrier-navigation">
+                <button id="mois-precedent" type="button"
+                    aria-label="Mois précédent">
+                    ←
+                </button>
+
+                <h2 id="titre-mois" aria-live="polite"></h2>
+
+                <button id="mois-suivant" type="button"
+                    aria-label="Mois suivant">
+                    →
+                </button>
+            </div>
+
+            <!-- Les jours et les devoirs seront créés en JavaScript -->
+            <div id="calendrier" aria-label="Calendrier mensuel"></div>
+
+            <p class="legende-calendrier">
+                <span class="point-legende point-a-faire"></span>
+                Devoir à faire
+                <span class="point-legende point-termine"></span>
+                Devoir terminé
+            </p>
+
+        </section>
+
+        <!-- Liste des devoirs du jour sélectionné -->
+        <section id="details-jour">
+            <h2 id="titre-jour">Sélectionne une date</h2>
+            <ul id="devoirs-du-jour"></ul>
+            <p id="message-jour">
+                Clique sur un jour du calendrier pour voir ses devoirs.
+            </p>
+
+            <a href="devoirs.html">Ajouter ou gérer mes devoirs</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudyHub — Ton espace de travail personnel</p>
+    </footer>
+
+    <!-- Le même fichier JavaScript que sur les autres pages -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+

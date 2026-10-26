@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Permet un affichage adapté à la taille de l'écran -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mes devoirs | StudyHub</title>
+
+    <!-- On utilise le même CSS que les autres pages -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Le JavaScript sera chargé à la fin du body -->
+</head>
+
+<body>
+
+    <!-- En-tête du site -->
+    <header>
+        <h1>StudyHub</h1>
+        <p>Organise ton travail, un devoir à la fois.</p>
+
+        <!-- Menu de navigation entre les pages -->
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="devoirs.html">Mes devoirs</a>
+            <a href="calendrier.html">Calendrier</a>
+            <a href="concentration.html">Concentration</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Présentation de la page -->
+        <section>
+            <h2>Mes devoirs</h2>
+            <p>
+                Ajoute tes devoirs ici pour les retrouver
+                même lorsque tu reviendras sur StudyHub.
+            </p>
+        </section>
+
+        <!-- Formulaire pour ajouter un devoir -->
+        <section>
+            <h2>Ajouter un devoir</h2>
+
+            <form id="formulaire-devoir">
+
+                <!-- Le titre du devoir -->
+                <label for="titre">Titre du devoir :</label>
+                <input
+                    type="text"
+                    id="titre"
+                    placeholder="Ex. : Exercices de maths"
+                    required
+                >
+
+                <!-- La matière concernée -->
+                <label for="matiere">Matière :</label>
+                <select id="matiere" required>
+                    <option value="">Choisir une matière</option>
+                    <option value="Mathématiques">Mathématiques</option>
+                    <option value="Physique-chimie">Physique-chimie</option>
+                    <option value="NSI">NSI</option>
+                    <option value="Français">Français</option>
+                    <option value="Anglais">Anglais</option>
+                    <option value="Espagnol">Espagnol</option>
+                    <option value="Histoire-géographie">
+                        Histoire-géographie
+                    </option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <!-- La date à laquelle le devoir doit être rendu -->
+                <label for="date-limite">Date limite :</label>
+                <input
+                    type="date"
+                    id="date-limite"
+                    required
+                >
+
+                <!-- Ce bouton déclenche l'envoi du formulaire -->
+                <button type="submit">Ajouter le devoir</button>
+
+            </form>
+        </section>
+
+        <!-- Liste des devoirs enregistrés -->
+        <section>
+            <h2>Ma liste de devoirs</h2>
+
+            <p id="message-liste">
+                Aucun devoir pour le moment.
+            </p>
+
+            <!-- JavaScript ajoutera les devoirs dans cette liste -->
+            <ul id="liste-devoirs"></ul>
+
+            <p id="message-confirmation" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudyHub — Ton espace de travail personnel</p>
+    </footer>
+
+    <!-- On charge JavaScript après les éléments HTML -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
